@@ -6,5 +6,7 @@ namespace BestBuyBestPractices
 {
     interface IProductRepository
     {
+        IEnumerable<Product> GetAllProducts();
+        void CreateProduct(string name, int price, int categoryID);
     }
 }
