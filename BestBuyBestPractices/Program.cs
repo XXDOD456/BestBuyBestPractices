@@ -20,6 +20,7 @@ namespace BestBuyBestPractices
 
             var repo = new DapperProductRepository(conn);
             var products = repo.GetAllProducts();
+
             foreach(var prod in products)
             {
                 Console.WriteLine(prod.Name);
